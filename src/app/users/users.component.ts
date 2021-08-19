@@ -54,17 +54,24 @@ export class UsersComponent implements OnInit {
       )}
   }
 
+  
+
   onSelect(user){
     this.router.navigate(['/users', user.id]);
   }
+
+  toUpdate(user: { id: any; }) {
+    this.router.navigate(['/update', user.id])
+  }
+
   openDialog(){
     this.dialogRef = this.dialog.open(DialogFormComponent,{
       minWidth:'300px',
       minHeight:'400px',
     });
     this.dialogRef.afterClosed().subscribe(result =>{
-      console.log(`the dialog was closed`)
-      console.log( "101", result);
+      // console.log(`the dialog was closed`)
+      // console.log( "101", result);
       this.dataSource.push(result);
       console.log("2222", this.dataSource)
       

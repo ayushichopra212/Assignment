@@ -11,6 +11,8 @@ import { MatButtonModule, MatCardModule, MatDialogModule, MatFormFieldModule, Ma
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { DialogFormComponent } from './dialog-form/dialog-form.component';
+import { UpdateComponent } from './update/update.component';
+
 
 
 @NgModule({
@@ -19,6 +21,7 @@ import { DialogFormComponent } from './dialog-form/dialog-form.component';
     UsersComponent,
     UsersDetailComponent,
     DialogFormComponent,
+    UpdateComponent
   ],
   entryComponents: [DialogFormComponent],
   
