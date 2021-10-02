@@ -5,8 +5,6 @@ import userList from '../mockData/userList.json';
 
 import { of } from 'rxjs';
 
-
-
 @Injectable({
   providedIn: 'root'
 })
